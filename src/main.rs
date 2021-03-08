@@ -15,7 +15,7 @@ fn main() {
     let mut collisions = 0;
 
     loop {
-        if v2 > d128!(0.0) && v1 >= d128!(0.0) && v2 >= v1 {
+        if v2 >= v1 && v1 >= d128!(0.0) {
             //Impossible to collide again - terminate
             break;
         }
